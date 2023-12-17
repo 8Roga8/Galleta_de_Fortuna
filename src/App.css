@@ -1,0 +1,79 @@
+:root {
+    --bg-shadow: #BFBFBF;
+    --color-title: #FFFFFF;
+    --color-text: #727273;
+}
+
+
+.all {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4em;
+}
+
+.title {
+    font-size: 52px;
+    text-shadow: 5px 5px var(--bg-shadow);
+    color: var(--color-title);
+}
+
+.bg_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../public/rectangle1.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+
+}
+.app_phrase {
+    color: var(--color-text);
+    font-size: 20px;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 840px;
+}
+
+
+
+.app_btn {
+    border: solid 3px;
+    border-radius: 10px; 
+    border-color: var(--color-title);
+    background-color:var(--bg-shadow);
+    font-size: 24px;
+    padding: 15px 65px 15px 65px;
+    color: var(--color-text);
+    cursor: pointer;
+    opacity: 0.9;
+}
+.app_btn:hover {
+    box-shadow: 0 0 14px var(--color-text);
+    transform: scale(1.1);
+    transition: 0.3s;  
+}
+
+@media (max-width: 855px) {
+    .title {
+        font-size: 35px;
+    }    
+    
+    .app_phrase {
+        font-size: 13px;
+        width: 315px; 
+    }
+    
+    .app_btn {
+        font-size: 16px; 
+        padding: 10px 55px 10px 55px;      
+    }
+}
